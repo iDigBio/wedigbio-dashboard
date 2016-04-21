@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="description" content="Wedigbio-dashboard : ">
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Wedigbio-dashboard</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/iDigBio/wedigbio-dashboard">View on GitHub</a>
+
+          <h1 id="project_title">Wedigbio-dashboard</h1>
+          <h2 id="project_tagline"></h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/iDigBio/wedigbio-dashboard/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/iDigBio/wedigbio-dashboard/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a id="wedigbio-dashboard-features" class="anchor" href="#wedigbio-dashboard-features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>WeDigBio Dashboard Features:</h1>
+
+<ul>
+<li>Maps of cumulative participant activity across project and events
+<a href="https://www.wedigbio.org/content/transcription-activity-map">Torque Map</a>
+</li>
+<li>Heat-map of collection localities transcribed</li>
+<li>Stream of thumbnail images that have been transcribed </li>
+<li>Timeline of transcribed records by collection date</li>
+<li>Leaderboard</li>
+</ul>
+
+<p><em>RSS feeds should look something like this:</em></p>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">item</span>&gt;
+&lt;<span class="pl-ent">project</span>&gt;Project name, if more than one project on this feed&lt;/<span class="pl-ent">project</span>&gt; 
+&lt;<span class="pl-ent">title</span>&gt;Specimen name or Collector Name/Collection Name&lt;/<span class="pl-ent">title</span>&gt;
+&lt;<span class="pl-ent">link</span>&gt;Specimen page URI (on transcribing site) &lt;/<span class="pl-ent">link</span>&gt;
+&lt;<span class="pl-ent">thumbnailUri</span>&gt;Thumbnail URI&lt;/<span class="pl-ent">thumbnailUri</span>&gt; 
+&lt;<span class="pl-ent">decimalLatitude</span>&gt;Lat. of collecting event &lt;/<span class="pl-ent">decimalLatitude</span>&gt;
+&lt;<span class="pl-ent">decimalLongitude</span>&gt;Long. of collecting event&lt;/<span class="pl-ent">decimalLongitude</span>&gt; 
+&lt;<span class="pl-ent">decimalLatitudeTranscribing</span>&gt;Transcription Lat&lt;/<span class="pl-ent">decimalLatitudeTranscribing</span>&gt;
+&lt;<span class="pl-ent">decimalLongitudeTranscribing</span>&gt;Transcription Long&lt;/<span class="pl-ent">decimalLongitudeTranscribing</span>&gt;
+&lt;<span class="pl-ent">dwc</span><span class="pl-ent">:</span><span class="pl-ent">verbatimEventDate</span>&gt;Time or period of collecting&lt;/<span class="pl-ent">dwc</span><span class="pl-ent">:</span><span class="pl-ent">verbatimEventDate</span>&gt; 
+&lt;<span class="pl-ent">pubDate</span>&gt;Timestamp of transcription&lt;/<span class="pl-ent">pubDate</span>&gt;
+&lt;<span class="pl-ent">dc</span><span class="pl-ent">:</span><span class="pl-ent">creator</span>&gt;User or project who create this transcription&lt;/<span class="pl-ent">dc</span><span class="pl-ent">:</span><span class="pl-ent">creator</span>&gt;
+&lt;/<span class="pl-ent">item</span>&gt;</pre></div>
+
+<h2>
+<a id="current-dashboard-data-providers" class="anchor" href="#current-dashboard-data-providers" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current Dashboard Data Providers</h2>
+
+<p><a href="http://beta.herbariaunited.org/recentthumbnail.rss.php">Herbaria@Home</a></p>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">item</span>&gt;
+&lt;<span class="pl-ent">title</span>&gt;Blysmus compressus&lt;/<span class="pl-ent">title</span>&gt;
+&lt;<span class="pl-ent">link</span>&gt;http://herbariaunited.org/specimen/395585/&lt;/<span class="pl-ent">link</span>&gt;
+&lt;<span class="pl-ent">description</span>&gt;
+<span class="pl-s"><span class="pl-pds">&lt;![CDATA[</span></span>
+<span class="pl-s">&lt;a href="http://herbariaunited.org/specimen/395585/"&gt;&lt;img src="http://herbariaunited.org/sheets/SLBI/imgcache/4/45874/thumb_45874.jpg" &gt;&lt;/a&gt;</span>
+<span class="pl-s"><span class="pl-pds">]]&gt;</span></span>
+&lt;/<span class="pl-ent">description</span>&gt;
+&lt;<span class="pl-ent">dc</span><span class="pl-ent">:</span><span class="pl-ent">creator</span>&gt;hollyrebecca @herbariumathome&lt;/<span class="pl-ent">dc</span><span class="pl-ent">:</span><span class="pl-ent">creator</span>&gt;
+&lt;<span class="pl-ent">dc</span><span class="pl-ent">:</span><span class="pl-ent">date</span>&gt;2015-06-22T11:58:24+00:00&lt;/<span class="pl-ent">dc</span><span class="pl-ent">:</span><span class="pl-ent">date</span>&gt;
+&lt;/<span class="pl-ent">item</span>&gt;</pre></div>
+
+<p><a href="http://lesherbonautes.mnhn.fr/contributions/last/rss">LesHebonautes</a></p>
+
+<div class="highlight highlight-text-xml"><pre>&lt;<span class="pl-ent">item</span>&gt;
+&lt;<span class="pl-ent">title</span>&gt;
+Triticum cristatum P03218978 geolocated by jonnard
+&lt;/<span class="pl-ent">title</span>&gt;
+&lt;<span class="pl-ent">project</span>&gt;Histoires de blés&lt;/<span class="pl-ent">project</span>&gt;
+&lt;<span class="pl-ent">link</span>&gt;
+http://lesherbonautes.mnhn.fr/specimens/MNHN/P/P03218978
+&lt;/<span class="pl-ent">link</span>&gt;
+&lt;<span class="pl-ent">pubDate</span>&gt;Mon, 15 Jun 2015 21:40:53 +0200&lt;/<span class="pl-ent">pubDate</span>&gt;
+&lt;<span class="pl-ent">thumbnailUri</span>&gt;
+http://lesherbonautes.mnhn.fr/tuile/MNHN/P/P03218978/tile_0_0_0.jpg
+&lt;/<span class="pl-ent">thumbnailUri</span>&gt;
+&lt;<span class="pl-ent">decimalLatitude</span>&gt;47.48639&lt;/<span class="pl-ent">decimalLatitude</span>&gt;
+&lt;<span class="pl-ent">decimalLongitude</span>&gt;19.041111&lt;/<span class="pl-ent">decimalLongitude</span>&gt;
+&lt;<span class="pl-ent">decimalLatitudeTranscribing</span>&gt;48.841461&lt;/<span class="pl-ent">decimalLatitudeTranscribing</span>&gt;
+&lt;<span class="pl-ent">decimalLongitudeTranscribing</span>&gt;2.356335&lt;/<span class="pl-ent">decimalLongitudeTranscribing</span>&gt;
+&lt;<span class="pl-ent">labelCompleted</span>&gt;true&lt;/<span class="pl-ent">labelCompleted</span>&gt;
+&lt;/<span class="pl-ent">item</span>&gt;</pre></div>
+
+<p><a href="https://api.zooniverse.org/projects/notes_from_nature">Notes From Nature</a></p>
+
+<div class="highlight highlight-source-js"><pre>{
+id<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>511410da3ae740c3ec000001<span class="pl-pds">"</span></span>,
+activated_subjects_at<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>2015-08-10T20:00:24Z<span class="pl-pds">"</span></span>,
+bucket<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>zooniverse-static<span class="pl-pds">"</span></span>,
+bucket_path<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>www.notesfromnature.org<span class="pl-pds">"</span></span>,
+classification_count<span class="pl-k">:</span> <span class="pl-c1">822452</span>,
+complete_count<span class="pl-k">:</span> <span class="pl-c1">158551</span>,
+created_at<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>2013-04-18T18:34:27Z<span class="pl-pds">"</span></span>,
+display_name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>Notes From Nature<span class="pl-pds">"</span></span>,
+groups<span class="pl-k">:</span> {
+<span class="pl-ii">5170103b3ae74027cf000002</span><span class="pl-k">:</span> {
+classification_count<span class="pl-k">:</span> <span class="pl-c1">243275</span>
+},
+<span class="pl-ii">517010563ae74027d3000002</span><span class="pl-k">:</span> {
+classification_count<span class="pl-k">:</span> <span class="pl-c1">481486</span>
+},
+<span class="pl-ii">520903d03ae740842f000002</span><span class="pl-k">:</span> {
+classification_count<span class="pl-k">:</span> <span class="pl-c1">13954</span>,
+rows_transcribed<span class="pl-k">:</span> <span class="pl-c1">337327</span>
+},
+<span class="pl-ii">5266c83a3ae740d5e3000002</span><span class="pl-k">:</span> {
+classification_count<span class="pl-k">:</span> <span class="pl-c1">81767</span>
+},
+<span class="pl-ii">55ada648469d922927000002</span><span class="pl-k">:</span> {
+classification_count<span class="pl-k">:</span> <span class="pl-c1">1970</span>
+}
+},
+name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>notes_from_nature<span class="pl-pds">"</span></span>,
+site_prefix<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>NN<span class="pl-pds">"</span></span>,
+updated_at<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>2013-04-18T18:34:27Z<span class="pl-pds">"</span></span>,
+user_count<span class="pl-k">:</span> <span class="pl-c1">7881</span>,
+workflow_name<span class="pl-k">:</span> <span class="pl-s"><span class="pl-pds">"</span>primary<span class="pl-pds">"</span></span>,
+zooniverse_id<span class="pl-k">:</span> <span class="pl-c1">22</span>
+}</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Wedigbio-dashboard maintained by <a href="https://github.com/iDigBio">iDigBio</a></p>
+        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
