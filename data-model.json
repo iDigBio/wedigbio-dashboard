@@ -1,0 +1,27 @@
+{
+  "item": [{
+    "project": "Project name, if more than one project on this feed",
+    "title": "Specimen name or Collector Name/Collection Name",
+    "link": "Specimen page URI (on transcribing site)",
+    "thumbnailUri": "Thumbnail URI",
+    "gid": "Unique identifier for this event",
+    "contributor": {
+      "decimalLatitude": "Lat. of collecting event",
+      "decimalLongitude": "Long. of collecting event",
+      "ipAddress": "IP",
+      "physicalLocation": {
+        "country": "",
+        "province": "",
+        "county": "",
+      }
+    },
+    "transcriptionEvent": {
+      "decimalLatitudeTranscribing": "Transcription Lat",
+      "decimalLongitudeTranscribing": "Transcription Long",
+      "dwcVerbatimEventDate": "Time or period of collecting",
+      "pubDate": "Timestamp of transcription",
+      "dc:creator": "User or project who create this transcription",
+      "discretionaryState": "Project-specific detail about state"
+    }
+  }]
+}
