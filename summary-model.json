@@ -1,0 +1,8 @@
+{
+  "project": "Name of project or expidition",
+  "contributors": "Number of individual users",
+  "numberOfSubjects": "Number of total assets/specimens/subjects",
+  "percentComplete": "0-100",
+  "firstContribution": "UTC Timestamp",
+  "lastContribution": "UTC Timestamp"
+}
