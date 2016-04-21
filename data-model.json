@@ -1,14 +1,21 @@
 {
-  "item": [{
+  "numFound":"",
+  "start":"",
+  "rows":"",
+  "items": [{
     "project": "Project name, if more than one project on this feed",
-    "title": "Specimen name or Collector Name/Collection Name",
-    "link": "Specimen page URI (on transcribing site)",
-    "thumbnailUri": "Thumbnail URI",
-    "gid": "Unique identifier for this event",
+    "description": "Description of transcription event, might include Specimen name or Collector Name/Collection Name or Collection ID",
+    "guid": "Unique identifier for this event",
+    "timestamp": "Timestamp of transcription",
+    "subject": {
+      "link": "Specimen page URI (on transcribing site)",
+      "thumbnailUri": "Thumbnail URI",
+    },
     "contributor": {
       "decimalLatitude": "Lat. of collecting event",
       "decimalLongitude": "Long. of collecting event",
       "ipAddress": "IP",
+      "transcriber": "User or project who created this transcription",
       "physicalLocation": {
         "country": "",
         "province": "",
@@ -17,13 +24,18 @@
         "locality": ""
       }
     },
-    "transcriptionEvent": {
-      "decimalLatitudeTranscribing": "Transcription Lat",
-      "decimalLongitudeTranscribing": "Transcription Long",
-      "dwcVerbatimEventDate": "Time or period of collecting",
-      "pubDate": "Timestamp of transcription",
-      "dc:creator": "User or project who create this transcription",
-      "discretionaryState": "Project-specific detail about state"
-    }
+    "transcriptionContent": {
+      "decimalLatitude": "Transcription Lat",
+      "decimalLongitude": "Transcription Long",
+      "country": "",
+      "province": "",
+      "county": "",
+      "municipality": "",
+      "locality": ""
+      "EventDate": "Time or period of collecting",
+      "who":"",
+      "what-taxon":"",
+    },
+    "discretionaryState": "Project-specific detail about state"
   }]
 }
