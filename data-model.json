@@ -25,16 +25,16 @@
       }
     },
     "transcriptionContent": {
-      "decimalLatitude": "Transcription Lat",
-      "decimalLongitude": "Transcription Long",
+      "lat": "",
+      "long": "",
       "country": "",
       "province": "",
       "county": "",
       "municipality": "",
-      "locality": ""
-      "EventDate": "Time or period of collecting",
-      "who":"",
-      "what-taxon":"",
+      "locality": "",
+      "date": "",
+      "collector":"",
+      "taxon":"",
     },
     "discretionaryState": "Project-specific detail about state"
   }]
