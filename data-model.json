@@ -13,6 +13,8 @@
         "country": "",
         "province": "",
         "county": "",
+        "municipality": "",
+        "locality": ""
       }
     },
     "transcriptionEvent": {
