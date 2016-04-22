@@ -1,13 +1,13 @@
 #WeDigBio Dashboard Features:
 
-* Maps of cumulative participant activity across project and events    
+* Maps of cumulative participant activity across project and events
 Example: [Torque Map](https://www.wedigbio.org/content/transcription-activity-map)
 * Heat-map of collection localities transcribed
-* Stream of thumbnail images that have been transcribed 
+* Stream of thumbnail images that have been transcribed
 * Timeline of transcribed records by collection date
 * Leaderboard
 
-_Dashboard endpoints should be structured something like this:_
+_Dashboard endpoints should be structured something like this and should default to the current timestamp and sort in descending order by timestamp:_
 ```json
 {
   "numFound":"",
@@ -51,7 +51,10 @@ _Dashboard endpoints should be structured something like this:_
   }]
 }
 ```
-
+_endpoints should accept the following parameters:_
+  * ?dateStart = UTC timestamp (optional)
+  * ?dateEnd = UTC timestamp (optional)
+  * ?rowStart = int  (optional, used in paging, row number to start from)
 
 ##Metadata
 
