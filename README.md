@@ -52,8 +52,8 @@ _Dashboard endpoints should be structured something like this and should default
 }
 ```
 _endpoints should accept the following parameters:_
-  * ?dateStart = UTC timestamp (optional)
-  * ?dateEnd = UTC timestamp (optional)
+  * ?timestampStart = UTC timestamp (optional)
+  * ?timestampEnd = UTC timestamp (optional)
   * ?rowStart = int  (optional, used in paging, row number to start from)
 
 ##Metadata
